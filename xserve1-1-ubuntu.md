@@ -1,5 +1,7 @@
 # Ubuntu 16.04 LTS on Xserve 1,1
 
+by [frusdelion](https://github.com/frusdelion/xserve-guides)
+
 ## Introduction
 We will be assuming the following as your work environment:
 - macOS Sierra with Docker for Mac installed (as of November 2017)
