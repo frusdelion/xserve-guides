@@ -45,16 +45,12 @@ If you wish to use your own distribution of Linux, please translate the followin
 **Steps**
 1. Run an Ubuntu Docker container as your workspace. This command will use your current directory as your work directory in the container. See `$(pwd)`.
   ```bash
-  $ docker run -it --rm -v "$(pwd)":/root --workdir /root ubuntu
+  $ docker run -it --rm -v "$(pwd)":/root --workdir /root ubuntu:16.04
   ```
-2. Download or clone GRUB2 from the grub website.
+2. Download GRUB2 from the grub website.
   - [GRUB2 source](ftp://ftp.gnu.org/gnu/grub/) (2.02 as of November 2017)
-  - Or you can use the following to clone the GRUB2 repository.
-  ```bash
-  # In Docker Container
-  $ git clone git://git.savannah.gnu.org/grub.git
-  $ cd ./grub
-  ```
+  - DO NOT download from the git repo, it is not compatible.  Only use 2.02.
+  
 3. Run either of the following environment variable commands for your desired EFI variant.
 
   ```bash
@@ -89,7 +85,7 @@ If you wish to use your own distribution of Linux, please translate the followin
 <a name="step-3"></a>
 ## 3. Copy the Ubuntu Server installer files to the USB Stick
 **Requirements**
-- A copy of the [Ubuntu Server 16.04.3 LTS](http://releases.ubuntu.com/16.04/ubuntu-16.04.3-server-amd64.img) `.img` (as of November 2017)
+- A copy of the [Ubuntu Server 16.04.3 LTS]([http://releases.ubuntu.com/16.04/ubuntu-16.04.3-server-amd64.img](https://releases.ubuntu.com/16.04/ubuntu-16.04.6-desktop-i386.iso)) `.iso` (as of November 2017)
 
 **Steps**
 1. Run the following command.
